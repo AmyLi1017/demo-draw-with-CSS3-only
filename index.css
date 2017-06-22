@@ -103,6 +103,41 @@
     position: absolute;
     bottom: 0;
 }
+.beard{
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    font-size: 0;
+}
+.beard>div{
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+}
+div.lineWrapper{
+    display: inline-block;
+}
+.beard div.lineWrapper>div{
+    width: 60px;
+    height: 2px;
+    background: #333333;
+    margin-bottom: 18px;
+}
+.beard div.lineWrapper>div:last-child{
+    margin-bottom: 0;
+}
+.left .lineWrapper>.topLine{
+    transform: rotate(200deg);
+}
+.left .lineWrapper>.bottomLine{
+    transform: rotate(160deg);
+}
+.right .lineWrapper>.topLine{
+    transform: rotate(-20deg);
+}
+.right .lineWrapper>.bottomLine{
+    transform: rotate(20deg);
+}
 .neck{
     width: 235px;
     height: 24px;
@@ -125,6 +160,12 @@
     left: 50%;
     margin-left: -23px;
     box-sizing: border-box;
+}
+.jingle>.jingleLight{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 24px 4px 5px #fff;
 }
 .jingle>.doubleLine{
     width: 40px;
@@ -224,13 +265,24 @@
     position: absolute;
     bottom: 0;
 }
+.halfPocketWrap{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -67px;
+    height: 67px;
+    width: 134px;
+    overflow: hidden;
+    border-top: 2px solid #333;
+}
 .pocket{
     width: 134px;
     height: 134px;
     border: 2px solid #000000;
     box-sizing: border-box;
     border-radius: 50%;
-    clip: rect(67px,0,0,0);
+    position: absolute;
+    bottom: 0;
 }
 .body{
     position: relative;
@@ -242,6 +294,46 @@
     border: 2px solid #333333;
     border-top: none;
 }
-
-
-
+.foot{
+    position: relative;
+    top: -115px;
+    width: 262px;
+    margin: 0 auto;
+    font-size: 0;
+    margin-top: -2px;
+}
+.foot>.middleWrapper{
+    width: 24px;
+    height: 12px;
+    position: absolute;
+    left: 50%;
+    top: -12px;
+    margin-left: -12px;
+    overflow: hidden;
+    padding-top: 2px;
+}
+.foot div.middle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: white;
+}
+.foot>div.left,.foot>.right{
+    display: inline-block;
+    width: 129px;
+    height: 34px;
+    border: 2px solid #333333;
+    box-sizing: border-box;
+}
+.foot>div.left{
+    margin-right: 4px;
+    border-radius: 24px 17px 17px 10px;
+}
+.foot>.right{
+    border-radius: 17px 24px 10px 17px;
+}
